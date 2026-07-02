@@ -35,7 +35,7 @@ export default function Onboarding() {
 
   function handleNext() {
     if (isLastSlide) {
-      router.push("/design-system");
+      router.push("/sign-up");
       return;
     }
     const nextIndex = index + 1;
@@ -72,7 +72,7 @@ export default function Onboarding() {
           <Text className="font-body text-[13px] text-clutch-text-3">Skip</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={handleNext} activeOpacity={0.85} className="rounded-clutch-sm bg-clutch-blue px-4 py-[9px]">
-          <Text className="font-body-semibold text-[13px] text-clutch-ink">{isLastSlide ? "Create account" : "Next"}</Text>
+          <Text className="font-body-semibold text-[13px] text-clutch-ink">{isLastSlide ? "Get Started" : "Next"}</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
