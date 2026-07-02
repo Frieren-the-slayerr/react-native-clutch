@@ -1,7 +1,6 @@
-import { router } from "expo-router";
 import { useEffect, useRef, useState } from "react";
-import { KeyboardAvoidingView, Modal, Platform, Pressable, Text, TextInput, View } from "react-native";
-import Svg, { Path } from "react-native-svg";
+import { ActivityIndicator, KeyboardAvoidingView, Modal, Platform, Pressable, Text, TextInput, View } from "react-native";
+import Svg, { Circle, Path } from "react-native-svg";
 
 import { colors } from "@/theme";
 
@@ -10,10 +9,13 @@ const CODE_LENGTH = 6;
 type VerificationModalProps = {
   visible: boolean;
   email: string;
+  error?: string;
+  verifying?: boolean;
   onClose: () => void;
+  onCodeComplete: (code: string) => void;
 };
 
-export function VerificationModal({ visible, email, onClose }: VerificationModalProps) {
+export function VerificationModal({ visible, email, error, verifying, onClose, onCodeComplete }: VerificationModalProps) {
   const [code, setCode] = useState("");
   const inputRef = useRef<TextInput>(null);
 
@@ -24,14 +26,16 @@ export function VerificationModal({ visible, email, onClose }: VerificationModal
     return () => clearTimeout(focusTimer);
   }, [visible]);
 
+  // Clear the code so the user can retype after a failed verification attempt.
+  useEffect(() => {
+    if (error) setCode("");
+  }, [error]);
+
   function handleChangeCode(text: string) {
     const digits = text.replace(/[^0-9]/g, "").slice(0, CODE_LENGTH);
     setCode(digits);
     if (digits.length === CODE_LENGTH) {
-      setTimeout(() => {
-        onClose();
-        router.replace("/");
-      }, 200);
+      onCodeComplete(digits);
     }
   }
 
@@ -124,11 +128,29 @@ export function VerificationModal({ visible, email, onClose }: VerificationModal
               ref={inputRef}
               value={code}
               onChangeText={handleChangeCode}
+              editable={!verifying}
               keyboardType="number-pad"
               maxLength={CODE_LENGTH}
               style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, opacity: 0 }}
             />
           </Pressable>
+
+          {verifying && (
+            <View style={{ marginTop: 14, flexDirection: "row", alignItems: "center", gap: 8 }}>
+              <ActivityIndicator size="small" color={colors.blue} />
+              <Text className="font-body text-[13px] text-clutch-text-2">Verifying…</Text>
+            </View>
+          )}
+
+          {!!error && !verifying && (
+            <View style={{ marginTop: 14, flexDirection: "row", alignItems: "center", gap: 8 }}>
+              <Svg width={15} height={15} viewBox="0 0 24 24" fill="none" stroke={colors.red} strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <Circle cx={12} cy={12} r={9} />
+                <Path d="M12 8v5M12 16.5v.01" />
+              </Svg>
+              <Text className="text-[13px] text-clutch-red">{error}</Text>
+            </View>
+          )}
         </View>
       </KeyboardAvoidingView>
     </Modal>
