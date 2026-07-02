@@ -1,0 +1,147 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+@import "nativewind/theme";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0a0e16;
+  color: #eaf1f8;
+}
+
+@theme {
+  /* ---- surfaces ---- */
+  --color-clutch-bg: #0a0e16;
+  --color-clutch-surface: #121822;
+  --color-clutch-surface-raised: #1a222f;
+  --color-clutch-surface-sunk: #07090f;
+  --color-clutch-border: #263141;
+  --color-clutch-border-soft: #1b2331;
+
+  /* ---- accents ---- */
+  --color-clutch-blue: #33a1ff;
+  --color-clutch-blue-dim: #1e6fc4;
+  --color-clutch-blue-wash: rgba(51, 161, 255, 0.16);
+  --color-clutch-amber: #ffb627;
+  --color-clutch-teal: #2fd3b4;
+  --color-clutch-teal-wash: rgba(47, 211, 180, 0.16);
+  --color-clutch-cyan: #4cb8f0;
+  --color-clutch-cyan-wash: rgba(76, 184, 240, 0.16);
+  --color-clutch-titanium: #b9aee0;
+  --color-clutch-red: #ff4d6d;
+  --color-clutch-red-wash: rgba(255, 77, 109, 0.16);
+
+  /* ---- text ---- */
+  --color-clutch-text-1: #eaf1f8;
+  --color-clutch-text-2: #93a0b2;
+  --color-clutch-text-3: #5f6b7d;
+  --color-clutch-ink: #0a0e16;
+
+  /* ---- type ---- */
+  --font-display: "Oswald_600SemiBold";
+  --font-display-medium: "Oswald_500Medium";
+  --font-display-bold: "Oswald_700Bold";
+  --font-body: "Inter_400Regular";
+  --font-body-medium: "Inter_500Medium";
+  --font-body-semibold: "Inter_600SemiBold";
+  --font-body-bold: "Inter_700Bold";
+  --font-mono: "IBMPlexMono_500Medium";
+  --font-mono-semibold: "IBMPlexMono_600SemiBold";
+
+  /* ---- radii ---- */
+  --radius-clutch-sm: 8px;
+  --radius-clutch-md: 12px;
+  --radius-clutch-lg: 18px;
+  --radius-clutch-pill: 999px;
+
+  /* ---- elevation ---- */
+  --shadow-clutch-e1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-clutch-e2: 0 6px 16px rgba(0, 0, 0, 0.45);
+  --shadow-clutch-e3: 0 20px 48px rgba(0, 0, 0, 0.55);
+}
+
+/*
+  Reusable component patterns (BEM), for shapes Tailwind utilities alone would
+  otherwise repeat across every screen. Native only — no pseudo-classes/elements,
+  no clip-path (unsupported on native; the signature corner-cut needs an SVG/mask
+  component instead, see the "signature cut" callout in the design system doc).
+*/
+@layer utilities {
+  .clutch-card {
+    background-color: var(--color-clutch-surface);
+    border-width: 1px;
+    border-color: var(--color-clutch-border);
+    border-radius: var(--radius-clutch-lg);
+  }
+
+  .clutch-field {
+    background-color: var(--color-clutch-surface-sunk);
+    border-width: 1px;
+    border-color: var(--color-clutch-border);
+    border-radius: var(--radius-clutch-md);
+  }
+
+  .clutch-chip {
+    border-width: 1px;
+    border-color: var(--color-clutch-border);
+    border-radius: var(--radius-clutch-pill);
+  }
+  .clutch-chip--active {
+    background-color: var(--color-clutch-blue-wash);
+    border-color: var(--color-clutch-blue);
+  }
+
+  .clutch-status-pill {
+    border-radius: var(--radius-clutch-pill);
+  }
+  .clutch-status-pill--pending {
+    background-color: rgba(147, 160, 178, 0.16);
+  }
+  .clutch-status-pill--matched {
+    background-color: var(--color-clutch-cyan-wash);
+  }
+  .clutch-status-pill--enroute {
+    background-color: var(--color-clutch-blue-wash);
+  }
+  .clutch-status-pill--progress {
+    background-color: rgba(255, 182, 39, 0.14);
+  }
+  .clutch-status-pill--complete {
+    background-color: var(--color-clutch-teal-wash);
+  }
+  .clutch-status-pill--cancelled {
+    background-color: var(--color-clutch-red-wash);
+  }
+
+  .clutch-btn {
+    border-radius: var(--radius-clutch-md);
+  }
+  .clutch-btn--primary {
+    background-color: var(--color-clutch-blue);
+  }
+  .clutch-btn--secondary {
+    background-color: var(--color-clutch-surface-raised);
+    border-width: 1px;
+    border-color: var(--color-clutch-border);
+  }
+  .clutch-btn--ghost {
+    background-color: transparent;
+    border-width: 1px;
+    border-color: var(--color-clutch-blue-dim);
+  }
+  .clutch-btn--destructive {
+    background-color: var(--color-clutch-red);
+  }
+  .clutch-btn--disabled {
+    background-color: var(--color-clutch-surface-raised);
+    opacity: 0.55;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}

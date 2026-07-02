@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.nativewind.dev)",
+      "Bash(npm run *)",
+      "Bash(timeout 60 npx expo start --web --non-interactive)",
+      "Bash(tee /tmp/expo-web.log)",
+      "Bash(curl -s \"http://localhost:8081/index.bundle?platform=web\" -o /tmp/bundle.js -w \"HTTP %{http_code}\\\\n\" --max-time 45)",
+      "Read(//tmp/**)",
+      "Bash(echo \"# react-native-clutch\")",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)"
+    ]
+  }
+}

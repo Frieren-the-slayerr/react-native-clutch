@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<meta name="design_doc_mode" content="canvas">
+<style>
+  *{box-sizing:border-box;}
+  body{margin:0;background:#0C0E10;}
+</style>
+</helmet>
+
+<div style="--acc:{{acc}};--acc-wash:{{accWash}};font-family:'Inter',-apple-system,sans-serif;color:#EAF1F8;background:#0C0E10;padding:72px;min-width:1720px;">
+
+  <!-- ======== TITLE ======== -->
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:8px;">
+    <span style="width:44px;height:44px;background:var(--acc,#33A1FF);clip-path:polygon(0 0,70% 0,100% 30%,100% 100%,30% 100%,0 70%);display:flex;align-items:center;justify-content:center;">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#0A0E16" stroke-width="2" stroke-linecap="round"><path d="M6 3v18M18 3v18M3 8h4M3 16h4M17 8h4M17 16h4"></path></svg>
+    </span>
+    <div>
+      <div style="font-family:'Oswald',sans-serif;font-size:30px;font-weight:600;letter-spacing:.05em;line-height:1;">CLUTCH — APP SCREENS</div>
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#5F6B7D;letter-spacing:.06em;margin-top:6px;">ONBOARDING · ACCESS · HOME · LIVE TRACKING · JOB BOARD · TAB NAV</div>
+    </div>
+  </div>
+  <div style="height:1px;background:#1B2331;margin:36px 0 56px;"></div>
+
+  <!-- ======== ONBOARDING ======== -->
+  <div style="margin-bottom:80px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:32px;">
+      <span style="width:22px;height:2px;background:var(--acc,#33A1FF);"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc,#33A1FF);">01 — Onboarding</span>
+    </div>
+    <div style="display:flex;gap:48px;flex-wrap:wrap;">
+
+      <!-- SPLASH -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:0 24px;">
+              <div style="width:100px;height:100px;background:var(--acc,#33A1FF);clip-path:polygon(0 0,70% 0,100% 30%,100% 100%,30% 100%,0 70%);display:flex;align-items:center;justify-content:center;">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#0A0E16" stroke-width="1.6" stroke-linecap="round"><path d="M6 3v18M18 3v18M3 8h4M3 16h4M17 8h4M17 16h4"></path></svg>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-family:'Oswald',sans-serif;font-size:24px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;">Clutch</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#93A0B2;margin-top:6px;">Roadside auto help</div>
+              </div>
+              <div style="width:140px;height:3px;background:#1A222F;border-radius:2px;overflow:hidden;margin-top:8px;"><div style="height:100%;width:64%;background:var(--acc,#33A1FF);"></div></div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Splash — brand mark on boot, mono status line sets the industrial register.</div>
+      </div>
+
+      <!-- ONBOARD 1 -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="flex:1;display:flex;flex-direction:column;padding:24px 22px 22px;gap:20px;">
+              <div style="height:190px;border-radius:14px;border:1px solid #263141;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 70% 28%,var(--acc-wash,rgba(51,161,255,.16)),transparent 60%),#07090F;">
+                <div style="width:66px;height:66px;border:1px solid #263141;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#1A222F;">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="var(--acc,#33A1FF)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16V11l2-5h10l2 5v5"></path><circle cx="7.5" cy="16.5" r="1.6"></circle><circle cx="16.5" cy="16.5" r="1.6"></circle><path d="M5 13h14"></path></svg>
+                </div>
+              </div>
+              <div>
+                <div style="font-family:'Oswald',sans-serif;font-size:26px;text-transform:uppercase;font-weight:600;letter-spacing:.01em;line-height:1.05;">Car trouble?<br>Help is close.</div>
+                <p style="font-size:15.5px;color:#93A0B2;margin:12px 0 0;line-height:1.5;">Post what's wrong and get matched with a nearby mechanic in minutes — no shop, no towing, no waiting.</p>
+              </div>
+              <div style="flex:1;"></div>
+              <div style="display:flex;gap:7px;justify-content:center;"><span style="width:18px;height:6px;border-radius:3px;background:var(--acc,#33A1FF);"></span><span style="width:6px;height:6px;border-radius:3px;background:#263141;"></span><span style="width:6px;height:6px;border-radius:3px;background:#263141;"></span></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="font-size:14px;color:#5F6B7D;">Skip</span>
+                <div style="background:var(--acc,#33A1FF);color:#0A0E16;font-weight:600;font-size:15px;padding:12px 24px;border-radius:10px;">Next</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Onboarding 1 of 2 — the customer promise.</div>
+      </div>
+
+      <!-- ONBOARD 2 -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="flex:1;display:flex;flex-direction:column;padding:24px 22px 22px;gap:20px;">
+              <div style="height:190px;border-radius:14px;border:1px solid #263141;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 30%,rgba(47,211,180,.16),transparent 60%),#07090F;">
+                <div style="width:66px;height:66px;border:1px solid #263141;border-radius:12px;display:flex;align-items:center;justify-content:center;background:#1A222F;">
+                  <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#2FD3B4" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a3.5 3.5 0 1 0-4.8 4.8L4 17l3 3 5.7-5.7a3.5 3.5 0 0 0 4.8-4.8l-2 2-2-2z"></path></svg>
+                </div>
+              </div>
+              <div>
+                <div style="font-family:'Oswald',sans-serif;font-size:26px;text-transform:uppercase;font-weight:600;letter-spacing:.01em;line-height:1.05;">Mechanics you<br>can trust.</div>
+                <p style="font-size:15.5px;color:#93A0B2;margin:12px 0 0;line-height:1.5;">Every mechanic grades up from Apprentice to Chief through completed jobs — reputation you can actually see.</p>
+              </div>
+              <div style="flex:1;"></div>
+              <div style="display:flex;gap:7px;justify-content:center;"><span style="width:6px;height:6px;border-radius:3px;background:#263141;"></span><span style="width:18px;height:6px;border-radius:3px;background:var(--acc,#33A1FF);"></span><span style="width:6px;height:6px;border-radius:3px;background:#263141;"></span></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;">
+                <span style="font-size:14px;color:#5F6B7D;">Skip</span>
+                <div style="background:var(--acc,#33A1FF);color:#0A0E16;font-weight:600;font-size:15px;padding:12px 24px;border-radius:10px;">Next</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Onboarding 2 of 2 — introduces the grade system.</div>
+      </div>
+
+      <!-- ROLE SELECT -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="padding:10px 20px 12px;"><div style="font-family:'Oswald',sans-serif;font-size:18px;text-transform:uppercase;letter-spacing:.03em;font-weight:600;">Get Started</div></div>
+            <div style="flex:1;display:flex;flex-direction:column;padding:4px 18px 16px;gap:14px;">
+              <p style="font-size:15px;color:#93A0B2;margin:0;">How will you use Clutch?</p>
+              <div style="border:1px solid var(--acc,#33A1FF);border-radius:12px;padding:16px;display:flex;gap:13px;align-items:flex-start;background:var(--acc-wash,rgba(51,161,255,.16));">
+                <div style="width:46px;height:46px;flex-shrink:0;border:1px solid #263141;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#1A222F;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--acc,#33A1FF)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 16V11l2-5h10l2 5v5"></path><circle cx="7.5" cy="16.5" r="1.6"></circle><circle cx="16.5" cy="16.5" r="1.6"></circle><path d="M5 13h14"></path></svg></div>
+                <div><div style="font-size:14.5px;font-weight:700;margin-bottom:4px;">I need a mechanic</div><p style="font-size:12.5px;color:#93A0B2;margin:0;line-height:1.45;">Post jobs and get matched with nearby, graded mechanics.</p></div>
+              </div>
+              <div style="border:1px solid #263141;border-radius:12px;padding:16px;display:flex;gap:13px;align-items:flex-start;background:#121822;">
+                <div style="width:46px;height:46px;flex-shrink:0;border:1px solid #263141;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#1A222F;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#93A0B2" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a3.5 3.5 0 1 0-4.8 4.8L4 17l3 3 5.7-5.7a3.5 3.5 0 0 0 4.8-4.8l-2 2-2-2z"></path></svg></div>
+                <div><div style="font-size:14.5px;font-weight:700;margin-bottom:4px;">I'm a mechanic</div><p style="font-size:12.5px;color:#93A0B2;margin:0;line-height:1.45;">Accept jobs nearby, build your grade, and get paid per job.</p></div>
+              </div>
+              <div style="flex:1;"></div>
+              <div style="background:var(--acc,#33A1FF);color:#0A0E16;font-weight:700;font-size:15.5px;text-align:center;padding:15px;border-radius:10px;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 13px,100% 100%,0 100%);">Continue</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Role select — the fork that decides which tab set comes next.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======== ACCESS ======== -->
+  <div style="margin-bottom:80px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:32px;">
+      <span style="width:22px;height:2px;background:var(--acc,#33A1FF);"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc,#33A1FF);">02 — Language &amp; Auth</span>
+    </div>
+    <div style="display:flex;gap:48px;flex-wrap:wrap;">
+
+      <!-- LANGUAGE -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="padding:8px 20px 12px;display:flex;align-items:center;justify-content:space-between;"><svg width="17" height="17" viewBox="0 0 24 24" stroke="#EAF1F8" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg><div style="font-family:'Oswald',sans-serif;font-size:17px;text-transform:uppercase;letter-spacing:.03em;font-weight:600;">Language</div><div style="width:17px;"></div></div>
+            <div style="flex:1;display:flex;flex-direction:column;padding:4px 18px 16px;gap:14px;overflow:hidden;">
+              <input placeholder="Search languages" style="background:#07090F;border:1px solid #263141;border-radius:12px;padding:12px 14px;color:#EAF1F8;font-family:'Inter';font-size:14.5px;outline:none;"/>
+              <div>
+                <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 2px;border-bottom:1px solid #1B2331;"><div style="display:flex;align-items:center;gap:12px;"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A0B2;width:26px;height:26px;border:1px solid #263141;border-radius:6px;display:flex;align-items:center;justify-content:center;">EN</div><div><div style="font-size:13.5px;font-weight:600;">English</div><div style="font-size:11px;color:#5F6B7D;">English</div></div></div><svg width="16" height="16" viewBox="0 0 24 24" stroke="var(--acc,#33A1FF)" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"></path></svg></div>
+                <div style="display:flex;align-items:center;padding:12px 2px;border-bottom:1px solid #1B2331;"><div style="display:flex;align-items:center;gap:12px;"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A0B2;width:26px;height:26px;border:1px solid #263141;border-radius:6px;display:flex;align-items:center;justify-content:center;">ES</div><div><div style="font-size:13.5px;font-weight:600;">Spanish</div><div style="font-size:11px;color:#5F6B7D;">Español</div></div></div></div>
+                <div style="display:flex;align-items:center;padding:12px 2px;border-bottom:1px solid #1B2331;"><div style="display:flex;align-items:center;gap:12px;"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A0B2;width:26px;height:26px;border:1px solid #263141;border-radius:6px;display:flex;align-items:center;justify-content:center;">FR</div><div><div style="font-size:13.5px;font-weight:600;">French</div><div style="font-size:11px;color:#5F6B7D;">Français</div></div></div></div>
+                <div style="display:flex;align-items:center;padding:12px 2px;border-bottom:1px solid #1B2331;"><div style="display:flex;align-items:center;gap:12px;"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A0B2;width:26px;height:26px;border:1px solid #263141;border-radius:6px;display:flex;align-items:center;justify-content:center;">PT</div><div><div style="font-size:13.5px;font-weight:600;">Portuguese</div><div style="font-size:11px;color:#5F6B7D;">Português</div></div></div></div>
+                <div style="display:flex;align-items:center;padding:12px 2px;border-bottom:1px solid #1B2331;"><div style="display:flex;align-items:center;gap:12px;"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A0B2;width:26px;height:26px;border:1px solid #263141;border-radius:6px;display:flex;align-items:center;justify-content:center;">VI</div><div><div style="font-size:13.5px;font-weight:600;">Vietnamese</div><div style="font-size:11px;color:#5F6B7D;">Tiếng Việt</div></div></div></div>
+                <div style="display:flex;align-items:center;padding:12px 2px;"><div style="display:flex;align-items:center;gap:12px;"><div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#93A0B2;width:26px;height:26px;border:1px solid #263141;border-radius:6px;display:flex;align-items:center;justify-content:center;">中</div><div><div style="font-size:13.5px;font-weight:600;">Chinese</div><div style="font-size:11px;color:#5F6B7D;">中文</div></div></div></div>
+              </div>
+              <div style="flex:1;"></div>
+              <div style="background:var(--acc,#33A1FF);color:#0A0E16;font-weight:700;font-size:15.5px;text-align:center;padding:15px;border-radius:10px;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 13px,100% 100%,0 100%);">Continue</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Language — searchable list, selection marked by a check, not a swapped flag.</div>
+      </div>
+
+      <!-- AUTH -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="flex:1;display:flex;flex-direction:column;padding:30px 22px 22px;gap:16px;">
+              <div>
+                <div style="font-family:'Oswald',sans-serif;font-size:25px;text-transform:uppercase;font-weight:600;line-height:1.08;">Sign in or create<br>an account</div>
+                <p style="font-size:15px;color:#93A0B2;margin:10px 0 0;">We'll text you a code — no password needed.</p>
+              </div>
+              <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--acc,#33A1FF);margin-top:6px;">Phone number</div>
+              <div style="display:flex;gap:9px;">
+                <div style="background:#07090F;border:1px solid #263141;border-radius:12px;padding:13px;font-family:'IBM Plex Mono',monospace;font-size:14px;flex-shrink:0;">🇺🇸 +1</div>
+                <input placeholder="(719) 555-0142" style="flex:1;background:#07090F;border:1px solid #263141;border-radius:12px;padding:13px 14px;color:#EAF1F8;font-family:'IBM Plex Mono',monospace;font-size:15px;outline:none;"/>
+              </div>
+              <div style="background:var(--acc,#33A1FF);color:#0A0E16;font-weight:700;font-size:15.5px;text-align:center;padding:14px;border-radius:10px;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 13px,100% 100%,0 100%);margin-top:2px;">Send Code</div>
+              <div style="display:flex;align-items:center;gap:10px;color:#5F6B7D;font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.06em;margin:4px 0;"><span style="flex:1;height:1px;background:#263141;"></span>or continue with<span style="flex:1;height:1px;background:#263141;"></span></div>
+              <div style="display:flex;gap:11px;">
+                <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:9px;font-size:13px;font-weight:600;background:#fff;color:#000;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#000"><path d="M16.5 1.5c.1 1.1-.3 2.2-1 3-.7.8-1.9 1.5-3 1.4-.1-1 .4-2.2 1-2.9.8-.9 2-1.5 3-1.5zM20.8 17c-.5 1.2-.8 1.7-1.5 2.7-1 1.4-2.3 3.2-4 3.2-1.5 0-1.9-1-3.9-1s-2.5 1-4 1c-1.7 0-3-1.6-4-3-2.7-4-3-8.6-1.3-11 1.2-1.7 3-2.7 4.7-2.7 1.7 0 2.8 1 4.2 1 1.4 0 2.2-1 4.2-1 1.5 0 3.1.8 4.2 2.2-3.7 2-3.1 7.3 1.4 8.6z"></path></svg>Apple</div>
+                <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:8px;padding:12px;border-radius:9px;font-size:13px;font-weight:600;background:#1A222F;color:#EAF1F8;border:1px solid #263141;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#93A0B2" stroke-width="1.7"></circle><path d="M8 12h8M12 8v8" stroke="#93A0B2" stroke-width="1.7"></path></svg>Google</div>
+              </div>
+              <div style="flex:1;"></div>
+              <p style="text-align:center;font-size:11px;color:#5F6B7D;margin:0;">By continuing you agree to the Terms and Privacy Policy.</p>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Auth — phone-first, passwordless. Apple leads per HIG, alongside Google.</div>
+      </div>
+
+      <!-- OTP -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="padding:8px 20px 12px;display:flex;align-items:center;justify-content:space-between;"><svg width="17" height="17" viewBox="0 0 24 24" stroke="#EAF1F8" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg><div style="font-family:'Oswald',sans-serif;font-size:17px;text-transform:uppercase;letter-spacing:.03em;font-weight:600;">Verify</div><div style="width:17px;"></div></div>
+            <div style="flex:1;display:flex;flex-direction:column;padding:16px 22px 22px;gap:24px;">
+              <p style="font-size:15px;color:#93A0B2;margin:0;line-height:1.5;">Enter the code sent to <span style="font-family:'IBM Plex Mono',monospace;color:#EAF1F8;">+1 (719) 555-0142</span></p>
+              <div style="display:flex;gap:9px;justify-content:center;">
+                <div style="width:40px;height:50px;border:1px solid #93A0B2;border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;background:#07090F;">4</div>
+                <div style="width:40px;height:50px;border:1px solid #93A0B2;border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;background:#07090F;">1</div>
+                <div style="width:40px;height:50px;border:1px solid #93A0B2;border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;background:#07090F;">7</div>
+                <div style="width:40px;height:50px;border:1px solid var(--acc,#33A1FF);box-shadow:0 0 0 2px var(--acc-wash,rgba(51,161,255,.16));border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;background:#07090F;">7</div>
+                <div style="width:40px;height:50px;border:1px solid #263141;border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;background:#07090F;"></div>
+                <div style="width:40px;height:50px;border:1px solid #263141;border-radius:9px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:20px;font-weight:600;background:#07090F;"></div>
+              </div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:#93A0B2;text-align:center;">Resend code in 0:28</div>
+              <div style="flex:1;"></div>
+              <div style="background:var(--acc,#33A1FF);color:#0A0E16;font-weight:700;font-size:15.5px;text-align:center;padding:15px;border-radius:10px;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 13px,100% 100%,0 100%);">Verify &amp; Continue</div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">OTP verify — active box gets the same green ring as any focused field.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======== HOME ======== -->
+  <div style="margin-bottom:80px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:32px;">
+      <span style="width:22px;height:2px;background:var(--acc,#33A1FF);"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc,#33A1FF);">03 — Home</span>
+    </div>
+    <div style="display:flex;gap:48px;flex-wrap:wrap;">
+
+      <!-- CUSTOMER HOME -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="padding:8px 20px 12px;display:flex;align-items:center;justify-content:space-between;"><div style="font-family:'Oswald',sans-serif;font-size:17px;text-transform:uppercase;letter-spacing:.03em;font-weight:600;">Clutch</div><div style="display:flex;gap:12px;align-items:center;"><svg width="19" height="19" viewBox="0 0 24 24" stroke="#93A0B2" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 5 2 6 2 6H4s2-1 2-6z"></path><path d="M10 20a2 2 0 0 0 4 0"></path></svg><div style="width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#4CB8F0,#1A222F);border:2px solid #263141;"></div></div></div>
+            <div style="flex:1;display:flex;flex-direction:column;padding:0 18px 12px;gap:13px;overflow:hidden;">
+              <div style="font-size:13px;color:#93A0B2;">Good afternoon, Jordan</div>
+              <div style="position:relative;overflow:hidden;background:linear-gradient(135deg,#1A222F,#121822);border:1px solid #263141;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,0 100%);padding:18px;">
+                <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 120% at 88% 15%,var(--acc-wash,rgba(51,161,255,.16)),transparent 62%);pointer-events:none;"></div>
+                <div style="position:relative;">
+                  <div style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--acc,#33A1FF);margin-bottom:8px;">// Need a hand?</div>
+                  <div style="font-family:'Oswald',sans-serif;text-transform:uppercase;font-size:20px;color:#EAF1F8;font-weight:600;margin-bottom:14px;line-height:1.05;">Post a job in 60 seconds</div>
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--acc,#33A1FF);color:#0A0E16;font-weight:700;font-size:13.5px;padding:12px 14px;border-radius:8px;"><span>Post a Job</span><svg width="15" height="15" viewBox="0 0 24 24" stroke="#0A0E16" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></div>
+                </div>
+              </div>
+              <div style="background:#121822;border:1px solid #263141;border-radius:12px;padding:14px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:var(--acc-wash,rgba(51,161,255,.16));color:var(--acc,#33A1FF);display:inline-flex;align-items:center;gap:6px;">● En Route</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:#93A0B2;">ETA 12 min</span></div>
+                <div style="display:flex;align-items:center;gap:11px;margin-top:12px;"><div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#4CB8F0,#1A222F);border:2px solid #263141;flex-shrink:0;"></div><div><div style="font-size:13px;font-weight:600;">Mike A. · Brake Inspection</div><div style="font-size:12px;color:#5F6B7D;">2019 Honda Civic</div></div></div>
+                <div style="display:flex;align-items:center;margin-top:14px;"><div style="width:9px;height:9px;border-radius:50%;background:var(--acc,#33A1FF);"></div><div style="flex:1;height:2px;background:var(--acc,#33A1FF);"></div><div style="width:9px;height:9px;border-radius:50%;background:var(--acc,#33A1FF);"></div><div style="flex:1;height:2px;background:#263141;"></div><div style="width:9px;height:9px;border-radius:50%;background:#263141;"></div><div style="flex:1;height:2px;background:#263141;"></div><div style="width:9px;height:9px;border-radius:50%;background:#263141;"></div></div>
+              </div>
+              <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--acc,#33A1FF);margin-top:2px;">Nearby Mechanics</div>
+              <div style="display:flex;gap:11px;">
+                <div style="width:92px;text-align:center;background:#121822;border:1px solid #263141;border-radius:12px;padding:12px;"><div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#4CB8F0,#1A222F);margin:0 auto 7px;border:2px solid #263141;"></div><div style="font-size:11px;font-weight:600;">Dana R.</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#FFB627;">4.8★</div></div>
+                <div style="width:92px;text-align:center;background:#121822;border:1px solid #263141;border-radius:12px;padding:12px;"><div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#4CB8F0,#1A222F);margin:0 auto 7px;border:2px solid #263141;"></div><div style="font-size:11px;font-weight:600;">Leo P.</div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#FFB627;">5.0★</div></div>
+              </div>
+            </div>
+            <div style="height:84px;flex-shrink:0;background:#1A222F;border-top:1px solid #263141;display:flex;align-items:flex-start;justify-content:space-around;padding-top:12px;">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:var(--acc,#33A1FF);"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">HOME</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">JOBS</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">CHAT</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">PROFILE</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Customer — Home feed with active job tracker and nearby mechanics.</div>
+      </div>
+
+      <!-- MECHANIC BOARD -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="padding:8px 20px 12px;display:flex;align-items:center;justify-content:space-between;"><div style="font-family:'Oswald',sans-serif;font-size:17px;text-transform:uppercase;letter-spacing:.03em;font-weight:600;">Job Board</div><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:rgba(47,211,180,.16);color:#2FD3B4;display:inline-flex;align-items:center;gap:6px;">● On Shift</span></div>
+            <div style="flex:1;display:flex;flex-direction:column;padding:0 18px 12px;gap:13px;overflow:hidden;">
+              <div style="background:#121822;border:1px solid #263141;border-radius:12px;padding:14px;display:flex;justify-content:space-between;">
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#5F6B7D;">TODAY</div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;">$184.00</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#5F6B7D;">JOBS</div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;">4</div></div>
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#5F6B7D;">RATING</div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;color:#FFB627;">4.9</div></div>
+              </div>
+              <div style="background:#121822;border:1px solid #263141;border-radius:12px;padding:14px;">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;"><div><div style="font-size:13.5px;font-weight:600;">Battery won't start</div><div style="font-size:12px;color:#5F6B7D;">2.3 mi · Sedan</div></div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:700;color:var(--acc,#33A1FF);">$65</div></div>
+                <div style="display:flex;gap:8px;margin-top:12px;"><div style="flex:1;text-align:center;border:1px solid #263141;color:#93A0B2;font-size:13px;padding:11px;border-radius:8px;">Decline</div><div style="flex:1;text-align:center;background:var(--acc,#33A1FF);color:#0A0E16;font-weight:700;font-size:13px;padding:11px;border-radius:8px;">Accept</div></div>
+              </div>
+              <div style="background:#121822;border:1px solid #263141;border-radius:12px;padding:14px;">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;"><div><div style="font-size:13.5px;font-weight:600;">Flat tire, roadside</div><div style="font-size:12px;color:#5F6B7D;">4.1 mi · SUV</div></div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:700;color:var(--acc,#33A1FF);">$48</div></div>
+                <div style="display:flex;gap:8px;margin-top:12px;"><div style="flex:1;text-align:center;border:1px solid #263141;color:#93A0B2;font-size:13px;padding:11px;border-radius:8px;">Decline</div><div style="flex:1;text-align:center;background:var(--acc,#33A1FF);color:#0A0E16;font-weight:700;font-size:13px;padding:11px;border-radius:8px;">Accept</div></div>
+              </div>
+              <div style="background:#121822;border:1px solid #263141;border-radius:12px;padding:14px;">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;"><div><div style="font-size:13.5px;font-weight:600;">Check engine light</div><div style="font-size:12px;color:#5F6B7D;">5.6 mi · Sedan</div></div><div style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:700;color:var(--acc,#33A1FF);">$90</div></div>
+                <div style="display:flex;gap:8px;margin-top:12px;"><div style="flex:1;text-align:center;border:1px solid #263141;color:#93A0B2;font-size:13px;padding:11px;border-radius:8px;">Decline</div><div style="flex:1;text-align:center;background:var(--acc,#33A1FF);color:#0A0E16;font-weight:700;font-size:13px;padding:11px;border-radius:8px;">Accept</div></div>
+              </div>
+            </div>
+            <div style="height:84px;flex-shrink:0;background:#1A222F;border-top:1px solid #263141;display:flex;align-items:flex-start;justify-content:space-around;padding-top:12px;">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:var(--acc,#33A1FF);"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">BOARD</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">CHAT</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">PROFILE</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Mechanic — Job board with On Shift toggle and earnings readout.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======== LIVE OPS ======== -->
+  <div style="margin-bottom:80px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:32px;">
+      <span style="width:22px;height:2px;background:var(--acc,#33A1FF);"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc,#33A1FF);">04 — Live Tracking &amp; Job Board</span>
+    </div>
+    <div style="display:flex;gap:48px;flex-wrap:wrap;">
+
+      <!-- LIVE TRACKING -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="position:absolute;inset:0;z-index:0;background:radial-gradient(circle at 62% 26%,rgba(76,184,240,.20),transparent 46%),radial-gradient(circle at 30% 62%,rgba(51,161,255,.14),transparent 48%),linear-gradient(#1B2331 1px,transparent 1px),linear-gradient(90deg,#1B2331 1px,transparent 1px);background-size:auto,auto,26px 26px,26px 26px;background-color:#07090F;"></div>
+            <!-- route + pins overlay -->
+            <div style="position:absolute;top:20%;left:16%;width:58%;height:2px;background:repeating-linear-gradient(90deg,var(--acc,#33A1FF) 0 7px,transparent 7px 13px);transform:rotate(24deg);z-index:1;"></div>
+            <div style="position:absolute;top:23%;left:15%;width:14px;height:14px;border-radius:50%;background:var(--acc,#33A1FF);border:2px solid #0A0E16;box-shadow:0 0 0 5px var(--acc-wash,rgba(51,161,255,.16));z-index:2;"></div>
+            <div style="position:absolute;top:52%;left:72%;width:12px;height:12px;border-radius:50%;background:#4CB8F0;border:2px solid #0A0E16;box-shadow:0 0 0 5px rgba(76,184,240,.16);z-index:2;"></div>
+            <!-- top bar -->
+            <div style="position:relative;z-index:5;height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="position:relative;z-index:5;padding:8px 18px 12px;display:flex;align-items:center;justify-content:space-between;">
+              <div style="width:36px;height:36px;border-radius:10px;background:rgba(10,14,22,.7);backdrop-filter:blur(6px);border:1px solid #263141;display:flex;align-items:center;justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" stroke="#EAF1F8" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:7px 12px;border-radius:999px;background:var(--acc-wash,rgba(51,161,255,.16));color:var(--acc,#33A1FF);display:inline-flex;align-items:center;gap:6px;backdrop-filter:blur(6px);">● En Route</div>
+              <div style="width:36px;height:36px;border-radius:10px;background:rgba(10,14,22,.7);backdrop-filter:blur(6px);border:1px solid #263141;display:flex;align-items:center;justify-content:center;"><svg width="16" height="16" viewBox="0 0 24 24" stroke="#EAF1F8" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v13M7 11l5 5 5-5M5 21h14"></path></svg></div>
+            </div>
+            <div style="flex:1;"></div>
+            <!-- sheet -->
+            <div style="position:relative;z-index:5;margin:0 12px 12px;background:#121822;border:1px solid #263141;border-radius:20px;padding:18px;box-shadow:0 -8px 30px rgba(0,0,0,.4);">
+              <div style="width:36px;height:4px;border-radius:2px;background:#263141;margin:0 auto 16px;"></div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+                <div><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#5F6B7D;letter-spacing:.06em;">ARRIVING IN</div><div style="font-family:'IBM Plex Mono',monospace;font-size:30px;font-weight:600;color:#EAF1F8;line-height:1;">12<span style="font-size:16px;color:#93A0B2;"> min</span></div></div>
+                <div style="text-align:right;"><div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#5F6B7D;letter-spacing:.06em;">DISTANCE</div><div style="font-family:'IBM Plex Mono',monospace;font-size:18px;font-weight:600;color:#EAF1F8;">2.3 mi</div></div>
+              </div>
+              <div style="display:flex;align-items:center;margin-bottom:16px;"><div style="width:9px;height:9px;border-radius:50%;background:var(--acc,#33A1FF);"></div><div style="flex:1;height:2px;background:var(--acc,#33A1FF);"></div><div style="width:9px;height:9px;border-radius:50%;background:var(--acc,#33A1FF);"></div><div style="flex:1;height:2px;background:var(--acc,#33A1FF);"></div><div style="width:11px;height:11px;border-radius:50%;background:var(--acc,#33A1FF);box-shadow:0 0 0 4px var(--acc-wash,rgba(51,161,255,.16));"></div><div style="flex:1;height:2px;background:#263141;"></div><div style="width:9px;height:9px;border-radius:50%;background:#263141;"></div></div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#4CB8F0,#1A222F);border:2px solid #263141;flex-shrink:0;"></div>
+                <div style="flex:1;">
+                  <div style="font-size:14px;font-weight:700;">Mike Alvarez</div>
+                  <div style="display:flex;align-items:center;gap:8px;margin-top:4px;"><div style="display:flex;align-items:center;gap:8px;padding:3px 9px;border-radius:999px;border:1px solid #263141;background:#1A222F;"><div style="display:flex;flex-direction:column;gap:2px;"><div style="width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #4CB8F0;"></div><div style="width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #4CB8F0;"></div></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#4CB8F0;">Technician</span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#FFB627;">4.9★</span></div>
+                </div>
+                <div style="display:flex;gap:8px;">
+                  <div style="width:42px;height:42px;border-radius:12px;border:1px solid #263141;background:#1A222F;display:flex;align-items:center;justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" stroke="#EAF1F8" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"></path></svg></div>
+                  <div style="width:42px;height:42px;border-radius:12px;background:var(--acc,#33A1FF);display:flex;align-items:center;justify-content:center;"><svg width="17" height="17" viewBox="0 0 24 24" stroke="#0A0E16" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5c0 9 6 15 15 15l-1-4-4-1-2 2a11 11 0 0 1-5-5l2-2-1-4z"></path></svg></div>
+                </div>
+              </div>
+            </div>
+            <div style="position:relative;z-index:5;height:84px;flex-shrink:0;background:#1A222F;border-top:1px solid #263141;display:flex;align-items:flex-start;justify-content:space-around;padding-top:12px;">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">HOME</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:var(--acc,#33A1FF);"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">JOBS</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">CHAT</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">PROFILE</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Customer — Live tracking. Blue route, glass HUD chips, ETA readout and one-tap call.</div>
+      </div>
+
+      <!-- ADVANCED JOB BOARD -->
+      <div style="display:flex;flex-direction:column;align-items:center;">
+        <div style="width:340px;height:720px;background:#05080D;border-radius:52px;padding:12px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:1px solid #26303f;position:relative;flex-shrink:0;">
+          <div style="position:absolute;top:26px;left:50%;transform:translateX(-50%);width:112px;height:28px;background:#000;border-radius:16px;z-index:20;"></div>
+          <div style="width:100%;height:100%;background:#0A0E16;border-radius:42px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+            <div style="height:52px;flex-shrink:0;display:flex;justify-content:space-between;align-items:center;padding:14px 28px 0;font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#EAF1F8;"><span>9:41</span><svg width="22" height="12" viewBox="0 0 26 13" fill="none"><rect x="1" y="1" width="21" height="11" rx="3" stroke="#EAF1F8"></rect><rect x="3" y="3" width="15" height="7" rx="1.5" fill="#EAF1F8"></rect><rect x="23" y="4.5" width="2" height="4" rx="1" fill="#EAF1F8"></rect></svg></div>
+            <div style="padding:8px 18px 10px;display:flex;align-items:center;justify-content:space-between;">
+              <div style="font-family:'Oswald',sans-serif;font-size:17px;text-transform:uppercase;letter-spacing:.03em;font-weight:600;">Job Board</div>
+              <div style="display:flex;align-items:center;gap:10px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:6px 11px;border-radius:999px;background:rgba(47,211,180,.16);color:#2FD3B4;display:inline-flex;align-items:center;gap:6px;">● On Shift</span><svg width="18" height="18" viewBox="0 0 24 24" stroke="#93A0B2" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18M6 12h12M10 19h4"></path></svg></div>
+            </div>
+            <div style="padding:0 18px 8px;display:flex;gap:7px;overflow:hidden;flex-shrink:0;">
+              <div style="font-size:12px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--acc-wash,rgba(51,161,255,.16));border:1px solid var(--acc,#33A1FF);color:var(--acc,#33A1FF);white-space:nowrap;">All</div>
+              <div style="font-size:12px;padding:7px 13px;border-radius:999px;border:1px solid #263141;color:#93A0B2;white-space:nowrap;">Diagnostics</div>
+              <div style="font-size:12px;padding:7px 13px;border-radius:999px;border:1px solid #263141;color:#93A0B2;white-space:nowrap;">High Pay</div>
+            </div>
+            <div style="flex:1;display:flex;flex-direction:column;padding:6px 18px 12px;gap:12px;overflow:hidden;">
+              <!-- featured advanced job -->
+              <div style="position:relative;overflow:hidden;background:#121822;border:1px solid var(--acc,#33A1FF);border-radius:14px;padding:15px;">
+                <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 100% at 90% 0%,var(--acc-wash,rgba(51,161,255,.16)),transparent 60%);pointer-events:none;"></div>
+                <div style="position:relative;">
+                  <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;">
+                    <div style="display:flex;align-items:center;gap:8px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 8px;border-radius:5px;background:var(--acc,#33A1FF);color:#0A0E16;">Advanced</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:#5F6B7D;">4.6 mi</span></div>
+                    <div style="font-family:'IBM Plex Mono',monospace;font-size:19px;font-weight:700;color:var(--acc,#33A1FF);">$210</div>
+                  </div>
+                  <div style="font-size:14.5px;font-weight:600;margin-bottom:2px;">Engine misfire diagnostic</div>
+                  <div style="font-size:12px;color:#5F6B7D;margin-bottom:12px;">2020 Ford F-150 · Check-engine + rough idle</div>
+                  <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;"><span style="font-size:10.5px;padding:4px 9px;border-radius:6px;background:#1A222F;border:1px solid #263141;color:#93A0B2;">OBD-II scan</span><span style="font-size:10.5px;padding:4px 9px;border-radius:6px;background:#1A222F;border:1px solid #263141;color:#93A0B2;">Coil packs</span><span style="font-size:10.5px;padding:4px 9px;border-radius:6px;background:#1A222F;border:1px solid #263141;color:#93A0B2;">~90 min</span></div>
+                  <div style="display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid #1B2331;border-bottom:1px solid #1B2331;margin-bottom:12px;"><div><div style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#5F6B7D;">LABOR</div><div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;">$150</div></div><div><div style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#5F6B7D;">PARTS EST.</div><div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;">$60</div></div><div><div style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#5F6B7D;">SITE ETA</div><div style="font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;">14 min</div></div></div>
+                  <div style="display:flex;gap:8px;"><div style="flex:1;text-align:center;border:1px solid #263141;color:#93A0B2;font-size:13px;padding:11px;border-radius:8px;">Details</div><div style="flex:1.4;text-align:center;background:var(--acc,#33A1FF);color:#0A0E16;font-weight:700;font-size:13px;padding:11px;border-radius:8px;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);">Accept · $210</div></div>
+                </div>
+              </div>
+              <!-- compact job -->
+              <div style="background:#121822;border:1px solid #263141;border-radius:14px;padding:13px;">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;"><div style="display:flex;align-items:center;gap:8px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(47,211,180,.16);color:#2FD3B4;">Standard</span><div><div style="font-size:13px;font-weight:600;">Brake pads, rear</div><div style="font-size:11.5px;color:#5F6B7D;">3.1 mi · Sedan · ~45 min</div></div></div><div style="font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:700;color:var(--acc,#33A1FF);">$120</div></div>
+              </div>
+              <div style="background:#121822;border:1px solid #263141;border-radius:14px;padding:13px;">
+                <div style="display:flex;justify-content:space-between;align-items:flex-start;"><div style="display:flex;align-items:center;gap:8px;"><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:5px;background:rgba(255,182,39,.16);color:#FFB627;">Urgent</span><div><div style="font-size:13px;font-weight:600;">No-start, needs jump + test</div><div style="font-size:11.5px;color:#5F6B7D;">1.8 mi · SUV · ~30 min</div></div></div><div style="font-family:'IBM Plex Mono',monospace;font-size:16px;font-weight:700;color:var(--acc,#33A1FF);">$75</div></div>
+              </div>
+            </div>
+            <div style="height:84px;flex-shrink:0;background:#1A222F;border-top:1px solid #263141;display:flex;align-items:flex-start;justify-content:space-around;padding-top:12px;">
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:var(--acc,#33A1FF);"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">BOARD</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">CHAT</span></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:5px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;">PROFILE</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:16px;text-align:center;max-width:320px;line-height:1.5;">Mechanic — Advanced job board. Tiered jobs with skills, parts + labor breakdown and site ETA.</div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======== TAB NAVIGATION ======== -->
+  <div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:32px;">
+      <span style="width:22px;height:2px;background:var(--acc,#33A1FF);"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--acc,#33A1FF);">05 — Tab Navigation</span>
+    </div>
+    <div style="display:flex;gap:56px;flex-wrap:wrap;align-items:flex-start;">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;">Customer — 4 tabs</div>
+        <div style="background:#1A222F;border:1px solid #263141;border-radius:18px;display:flex;padding:16px 10px 14px;gap:4px;width:440px;">
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--acc,#33A1FF);"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;">HOME</span></div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;">JOBS</span></div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;color:#5F6B7D;position:relative;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;">CHAT</span><span style="width:7px;height:7px;border-radius:50%;background:#FF4D6D;position:absolute;top:-2px;right:28%;border:1.5px solid #1A222F;"></span></div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;">PROFILE</span></div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:14px;max-width:440px;line-height:1.6;">Built around a job. Chat carries the unread dot.</div>
+      </div>
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;">Mechanic — 3 tabs</div>
+        <div style="background:#1A222F;border:1px solid #263141;border-radius:18px;display:flex;padding:16px 10px 14px;gap:4px;width:340px;">
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--acc,#33A1FF);"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 12h14M5 18h14"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;">BOARD</span></div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H8l-4 4V5z"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;">CHAT</span></div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;color:#5F6B7D;"><svg width="22" height="22" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"></circle><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"></path></svg><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;">PROFILE</span></div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#5F6B7D;margin-top:14px;max-width:340px;line-height:1.6;">Built around a shift. Role-locked — set once at onboarding.</div>
+      </div>
+      <div style="max-width:360px;">
+        <div style="font-family:'Oswald',sans-serif;font-size:20px;text-transform:uppercase;font-weight:600;margin-bottom:16px;">Anatomy</div>
+        <div style="display:flex;flex-direction:column;gap:11px;font-size:13px;color:#93A0B2;line-height:1.5;">
+          <div><b style="color:var(--acc,#33A1FF);font-family:'IBM Plex Mono',monospace;">HEIGHT</b> &nbsp;49pt content + safe-area inset</div>
+          <div><b style="color:var(--acc,#33A1FF);font-family:'IBM Plex Mono',monospace;">ICON</b> &nbsp;&nbsp;&nbsp;21×21pt, 1.7pt stroke, SF Symbols</div>
+          <div><b style="color:var(--acc,#33A1FF);font-family:'IBM Plex Mono',monospace;">LABEL</b> &nbsp;9.5pt Plex Mono, uppercase</div>
+          <div><b style="color:var(--acc,#33A1FF);font-family:'IBM Plex Mono',monospace;">ACTIVE</b> Signal Blue icon + label, no fill</div>
+          <div><b style="color:var(--acc,#33A1FF);font-family:'IBM Plex Mono',monospace;">BADGE</b> 7pt Brake Red dot, count hidden &lt;3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;acc&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#33A1FF&quot;,&quot;options&quot;:[&quot;#33A1FF&quot;,&quot;#2E90E0&quot;,&quot;#7FC4FF&quot;,&quot;#1E6FC4&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Theme&quot;,&quot;label&quot;:&quot;Accent&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const acc = this.props.acc || '#33A1FF';
+    // BF3 signal-blue accent
+    let r = 51, g = 161, b = 255;
+    const m = /^#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})$/i.exec(acc.trim());
+    if (m) { r = parseInt(m[1], 16); g = parseInt(m[2], 16); b = parseInt(m[3], 16); }
+    return { acc, accWash: `rgba(${r},${g},${b},0.14)` };
+  }
+}
+</script>
+</body>
+</html>
