@@ -15,14 +15,18 @@ type CutCornerButtonProps = {
   disabled?: boolean;
   loading?: boolean;
   children: ReactNode;
+  accessibilityLabel?: string;
 };
 
-export function CutCornerButton({ onPress, disabled, loading, children }: CutCornerButtonProps) {
+export function CutCornerButton({ onPress, disabled, loading, children, accessibilityLabel }: CutCornerButtonProps) {
   return (
     <TouchableOpacity
       onPress={onPress}
       disabled={disabled}
       activeOpacity={0.85}
+      accessibilityRole="button"
+      accessibilityLabel={accessibilityLabel}
+      accessibilityState={{ disabled, busy: loading }}
       className="flex-row items-center justify-center gap-x-[9px] bg-clutch-blue rounded-tl-[11px] rounded-bl-[11px] rounded-br-[11px] py-[15px]"
       style={{ opacity: disabled ? 0.7 : 1 }}
     >
