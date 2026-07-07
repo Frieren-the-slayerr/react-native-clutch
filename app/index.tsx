@@ -1,5 +1,5 @@
 import { useAuth, useClerk, useUser } from "@clerk/expo";
-import { Redirect } from "expo-router";
+import { Redirect, router } from "expo-router";
 import { ActivityIndicator, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -36,9 +36,16 @@ export default function Home() {
           The home feed is coming in the next lesson. You&apos;re signed in and ready to go.
         </Text>
         <TouchableOpacity
+          onPress={() => router.push("/language-select")}
+          activeOpacity={0.85}
+          className="mt-4 rounded-clutch-sm border border-clutch-border bg-clutch-surface px-5 py-[13px]"
+        >
+          <Text className="font-body-bold text-[14px] text-clutch-text-1">Change language</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => signOut()}
           activeOpacity={0.85}
-          className="mt-4 rounded-clutch-sm bg-clutch-blue px-5 py-[13px]"
+          className="mt-3 rounded-clutch-sm bg-clutch-blue px-5 py-[13px]"
         >
           <Text className="font-body-bold text-[14px] text-clutch-ink">Sign out</Text>
         </TouchableOpacity>
