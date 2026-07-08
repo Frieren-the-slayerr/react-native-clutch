@@ -6,6 +6,7 @@ import Svg, { Circle, Path } from "react-native-svg";
 
 import { CutCornerButton } from "@/components/CutCornerButton";
 import { languages } from "@/data/languages";
+import { useLanguageStore } from "@/store/language";
 import { colors } from "@/theme";
 import type { LanguageCode } from "@/types/learning";
 
@@ -40,8 +41,10 @@ function CheckIcon() {
 }
 
 export default function LanguageSelect() {
+  const storedLanguage = useLanguageStore((state) => state.selectedLanguage);
+  const setLanguage = useLanguageStore((state) => state.setLanguage);
   const [query, setQuery] = useState("");
-  const [selected, setSelected] = useState<LanguageCode>(languages[0].code);
+  const [selected, setSelected] = useState<LanguageCode>(storedLanguage ?? languages[0].code);
   const [searchFocused, setSearchFocused] = useState(false);
 
   const filtered = useMemo(() => {
@@ -58,9 +61,12 @@ export default function LanguageSelect() {
   const selectedLanguage = languages.find((language) => language.code === selected);
 
   function handleConfirm() {
-    // Selection is local for now — persisting it globally (Zustand + AsyncStorage
-    // per AGENTS.md) is a later lesson once a store/ folder exists.
-    router.back();
+    setLanguage(selected);
+    if (router.canGoBack()) {
+      router.back();
+    } else {
+      router.replace("/");
+    }
   }
 
   return (
